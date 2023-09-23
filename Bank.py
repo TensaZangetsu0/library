@@ -4,9 +4,9 @@ class Atm:
     self.__balance=0
     print("Welcome To The Atm")
 
-    self.menu()
+    self.__menu()
 
-  def menu(self):
+  def __menu(self):
     user_input=input("""
     How would you like to proceed?
     1.Enter 1 to create pin
@@ -31,7 +31,7 @@ class Atm:
     self.__pin=input("Create Your pin: ")
     print("Pin created sucessfully")
 
-    self.menu()
+    self.__menu()
 
   def deposit(self):
     temp=input("Enter your pin")
@@ -42,7 +42,7 @@ class Atm:
     else:
       print("Incorrect pin")
 
-    self.menu()  
+    self.__menu()  
 
   def withdrawl(self):
     temp=input("Enter your pin")
@@ -56,7 +56,7 @@ class Atm:
     else:
       print("Incorrect pin")   
 
-    self.menu()  
+    self.__menu()  
 
   def check_balance(self):
     temp=input("Enter your pin")
@@ -65,7 +65,7 @@ class Atm:
     else:
       print("Incorrect pin")  
 
-    self.menu()
+    self.__menu()
   
   def exit(self):
     print("bye")
